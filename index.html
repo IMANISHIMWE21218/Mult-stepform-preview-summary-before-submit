@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-step form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    #summary {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    }
+
+    #summary label {
+    font-weight: bold;
+    }
+
+    #summary span {
+    margin-left: 10px;
+    }
+
+
+</style>
+<body>
+    <section>
+        <div class="container">
+            <form>
+                <div class="step step-1 active">
+                    <h4 style="display: flex; justify-content: center; padding: 15px;">Indentification</h4>
+                    <div class="fields 1" >
+                            <div class="form-group">
+                                <label for="VehicleType">Vehicle Type</label>
+                                <input autocomplete="off" type="text" id="VehicleType" name="VehicleType" />
+                            </div>
+                            <div class="form-group">
+                                <label for="VehicleUsage">Vehicle Usage</label>
+                                <input autocomplete="off" type="text" id="VehicleUsage" name="VehicleUsage" />
+                            </div>
+                            <div class="form-group">
+                                <label for="VehicleManufacturedYear">Vehicle Manufactured Year</label>
+                                <input autocomplete="off" type="text" id="VehicleManufacturedYear" name="VehicleManufacturedYear" />
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="VehicleBrand">Vehicle Brand(Ex: TOYOTA)</label>
+                                <input autocomplete="off" type="text" id="VehicleBrand" name="VehicleBrand" />
+                            </div>
+                            
+
+                           
+                            
+
+                    </div>
+                    <div class="fields 2" >
+                            <div class="form-group">
+                                <label for="VehicelModel">Vehicel Model(Ex: RAVA)</label>
+                                <input autocomplete="off" type="text" id="VehicelModel" name="VehicelModel" />
+                            </div>
+                            <div class="form-group">
+                                <label for="VehiclePlate">Vehicle Plate No (Ex: RRA 001 A)</label>
+                                <input autocomplete="off" type="text" id="VehiclePlate" name="VehiclePlate" />
+                            </div>
+                            <div class="form-group">
+                                <label for="VehicleChassis">Vehicle Chassis No</label>
+                                <input autocomplete="off" type="text" id="VehicleChassis" name="nick-nameVehicleChassis" />
+                            </div>
+                            <div class="form-group">
+                                <label for="VehicleSeatCapacity">VehicleSeatCapacity</label>
+                                <input autocomplete="off" type="text" id="VehicleSeatCapacity" name="VehicleSeatCapacity" />
+                            </div>
+                       
+                           
+
+                    </div>
+                    
+                    <button type="button" class="next-btn">Next</button>
+                </div>
+                <div class="step step-2">
+                    <h4 style="display: flex; justify-content: center; padding: 15px;">Insurance covers</h4>
+                        <div class="fields 3" >
+                            <div class="form-group">
+                                <label for="Duration">Duration</label>
+                                <input autocomplete="off" type="text" id="Duration" name="Duration" />
+                            </div>
+                            <div class="form-group">
+                                <label for="LocationCover">Location Cover</label>
+                                <input type="text" id="LocationCover" name="LocationCover" />
+                            </div>
+                            <div class="form-group">
+                                <label for="Declaredvalue">Declared value /Sum Insured</label>
+                                <input autocomplete="off" type="text" id="Declaredvalue" name="Declaredvalue" />
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="Numberofoccupantscovered">Number of occupants covered</label>
+                                <input autocomplete="off" type="text" id="Numberofoccupantscovered" name="Numberofoccupantscovered" />
+                            </div>
+                            
+                            
+
+                    </div>
+                    <div class="fields 4" >
+                            <div class="form-group">
+                                <label for="SumInsuredperoccupant">Sum Insured per occupant</label>
+                                <input autocomplete="off" type="text" id="SumInsuredperoccupant" name="SumInsuredperoccupant" />
+                            </div>
+                            <style>
+                                .fields .form-check-inline{
+                                    padding: 10px 10px;
+                                }
+                            </style>
+                            <div class="input-group">
+                                <label for="lastName" style="padding: 0 10px; left: 0; font-weight: 600;">Select Covers</label>
+                                <div class="fields">
+                                    <div class="form-check-inline" >
+                                        <label class="form-check-label">
+                                          <input type="checkbox" class="form-check-input" value="" id="Thirdparty">Third party Liability
+                                        </label>
+                                      </div>
+                                      <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                          <input type="checkbox" class="form-check-input" value="" id="OwnDamage">Own Damage
+                                        </label>
+                                      </div>
+                                      <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                          <input type="checkbox" class="form-check-input" value="" id="Theft">Theft
+                                        </label>
+                                      </div>
+                                      <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                          <input type="checkbox" class="form-check-input" value="" id="Fire" >Fire
+                                        </label>
+                                      </div>
+                                      <br>
+                                     
+                                </div>
+                                <div class="fields">
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                          <input type="checkbox" class="form-check-input" value="" id="Occupant">Occupant
+                                        </label>
+                                      </div>
+                                      <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                          <input type="checkbox" class="form-check-input" value="" id="TPL">TPL+
+                                        </label>
+                                      </div>
+                                     
+                                      <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                          <!-- <input type="checkbox" class="form-check-input" value="">Option 6 -->
+                                        </label>
+                                      </div>
+                                      <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                          <!-- <input type="checkbox" class="form-check-input" value="">Option 6 -->
+                                        </label>
+                                      </div>
+                                </div>
+                            </div>
+                            <!-- <div class="form-group">
+                                <label for="nickName">Nick Name</label>
+                                <input autocomplete="off" type="text" id="nickName" name="nick-name" />
+                            </div>
+                            <div class="form-group">
+                                <label for="firstName">F234r</label>
+                                <input autocomplete="off" type="text" id="firstName" name="first-name" />
+                            </div>
+                           -->
+                    </div>
+                    <button type="button" class="previous-btn">Prev</button>
+                    <button type="button" class="next-btn" onclick="showSummary()">Next</button>
+                </div>
+
+                
+                <div class="step step-4">
+                    <h4 style="display: flex; justify-content: center; padding: 15px;">Insurance Summary</h4>
+                    <div class="fields 5" >
+                        <div class="form-group">
+
+                            <!-- <label for="country">country</label> -->
+                            <div id="summary"></div>
+
+                        </div>
+                       
+                  
+                </div>
+                    <button type="button" class="previous-btn">Prev</button>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
